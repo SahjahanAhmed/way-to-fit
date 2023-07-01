@@ -21,7 +21,6 @@ $(".fa-sun").click((e) => {
   getTheme[0].theme = "light";
   localStorage.setItem("theme", JSON.stringify(getTheme));
 });
-console.log(getTheme);
 window.addEventListener("DOMContentLoaded", () => {
   if (getTheme[0].theme === "light") {
     $("body").removeClass("dark");
